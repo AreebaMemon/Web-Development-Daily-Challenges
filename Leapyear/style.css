@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px 30px;
+  text-align: center;
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+}
+
+.container h1 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.container input[type="number"] {
+  width: 90%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #555;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 25px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.container input[type="number"]:focus {
+  border-color: #ffffff;
+}
+
+.container button {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  color: #121212;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.container button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
